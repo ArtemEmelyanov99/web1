@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(216, 218, 218);
+}
+header{
+    background-color: rgb(30, 30, 32);
+}
+footer{
+    background-color: rgb(30, 30, 32);
+}
+h1
+{
+    color: black;
+    font-size:25pt;
+}
+
+h2{
+    color: rgb(216, 218, 218);
+}
+ 
+.image{
+    border-radius: 300px; /* Радиус скругления */
+    border: 3px solid rgb(8, 2, 65); /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+    width: 300px;
+    height: 400px;
+    
+}

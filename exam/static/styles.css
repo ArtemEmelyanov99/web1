@@ -1,0 +1,113 @@
+ul {
+    font-family: "Comic Sans MS";
+}
+
+li a {
+    display: block;
+    color: #7cdab5c4;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #7cdab5c4;
+    color: white;
+}
+
+nav{
+    background-color: #560319;
+}
+h1{
+    font-family: "Comic Sans MS";
+    background-color: #cf7a3a;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+h2{
+    font-family: "Comic Sans MS";
+}
+
+p{
+    font-family: "Comic Sans MS";
+    font-size: 30px;
+    color: black;
+}
+.contact{
+    font-family: "Comic Sans MS";
+    font-size: 15px;
+}
+
+.back{
+    background-color:#ebd0b5;
+}
+.order-sheet {
+    position: relative;
+}
+
+.order-sheet__item {
+    margin: 15px 0;
+}
+
+.item__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    outline: 1px solid #560319;
+}
+
+.order-sheet__image-item {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.order-sheet__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order-sheet__bottom {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.order-sheet__subtitle {
+    font-family: "Comic Sans MS";
+    flex-grow: 1;
+    font-size: 28px;
+    color: #560319;
+}
+
+.order-sheet__groop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid #560319;
+}
+
+.order-sheet__text {
+    font-size: 22px;
+    color: #560319;
+}
+
+.order-sheet__price {
+    font-size: 20px;
+}
+
+.order-sheet__price-value {
+    font-family: "Comic Sans MS";
+    color: #560319;
+}
+
+.order-sheet__price-text {
+    font-family: "Comic Sans MS";
+    color: #560319;
+}
+.modal-body{
+    background-color: rgba(241, 175, 113, 0.644);
+    font-family: "Comic Sans MS";
+}

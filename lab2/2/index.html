@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="ru">
+    <head>
+         <meta charset="OTF-8">
+         <link href="styles.css" rel="stylesheet">
+        <title>   
+            Форма обратной связи
+        </title>
+    </head>
+<body style="background-image: url(img.png)">
+	<header>
+	</header>
+	<main>
+        <h1 style="text-align: center;">Форма обратной связи</h1>
+        <div style="text-align: center;">
+            <form method="POST">
+
+                       <div class="form-group">
+                           <label for="name">ФИО:</label>
+                           <input id="name" name="name" type="text" placeholder="Иванов Иван Иванович"> 
+                       </div>
+
+                       <div class="form-group">
+                           <label for="name">Пол:
+                           <input name="sex" type="radio" value="male" > Мужской
+                           <input name="sex" type="radio" value="female"> Женский
+                           </label>
+                       </div>
+
+                       <div class="form-group">
+                           <label for="email">Электронная почта:</label>
+                           <input id="email" name="email" type="text" placeholder="your@email.com"> 
+                       </div>
+
+                       <div class="form-group">
+                       <label for="cat">Категория обращения:</label>
+                           <select id="cat" name="cat">
+                           <option value="gratitude" >Благодарность</option>
+                           <option value="complaint" selected>Жалоба</option>
+                           </select>			
+                       </div>
+
+                       <div class="form-group">
+                           <label for="text1">Текст:</label>
+                           <textarea id="text1" name="text1" cols=60 rows=10 placeholder="Напишите здесь вашу жалобу/благодарность."></textarea> 
+                       </div>
+
+                       <div class="form-group">
+                           <label for="attach">Файл:</label>
+                           <input id="attach" name="attach" type="file"> 
+                       </div>
+
+                       <div class="form-group">
+                           <input id="button" name="button" type="submit" value="Отправить"> 
+                       </div>
+                   </form>
+                   
+           </div>
+       
+	</main>
+	<footer>
+        <div class="container" id="contacts">
+            <span class="sub">© Сайт Полины Давыткиной </a> 2020</span>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
