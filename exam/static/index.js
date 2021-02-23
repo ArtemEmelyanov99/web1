@@ -13,6 +13,7 @@ function get_data() {
 	if (xhr.status != 200) {
 		alert(xhr.status + ": " + xhr.statusText);
 	} else {
+		alert("Данные подгружены, все ОК");
 		return JSON.parse(xhr.response);
 	}
 }

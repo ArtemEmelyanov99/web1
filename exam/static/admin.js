@@ -12,6 +12,7 @@ function get_data() {
 	if (xhr.status != 200) {
 		alert(xhr.status + ": " + xhr.statusText);
 	} else {
+		alert("Данные подгружены, все ОК");
 		return JSON.parse(xhr.response);
 	}
 }
@@ -230,7 +231,7 @@ function delete_from_API(id) {
 		url: API_RESPONSE,
 		response: "text",
 	});
-	
+	alert("Запись удалена");
 }
 // КОНЕЦ УДАЛЕНИЯ
 
@@ -387,6 +388,7 @@ function add_data() {
 		url: DATA_API + "?api_key=" + UUID,
 		data: data,
 	});
+	alert("Запись добавлена");
 }
 // КОНЕЦ ДОБАВЛЕНИЯ ДАННЫХ
 
