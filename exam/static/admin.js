@@ -1,7 +1,7 @@
 let DATA_API = "http://exam-2020-1-api.std-900.ist.mospolytech.ru/api/data1";
 let DATA_API_ID =
 	"http://exam-2020-1-api.std-900.ist.mospolytech.ru/api/data1/";
-let UUID = "340b5db7-f13d-4c8f-bdd3-1fa5fb82f40a";
+let UUID = "2ec33300-d943-4524-a5ac-b9ee72002ac2";
 let data_for_fill = get_data();
 
 //проверяет загрузку данных из JSON
