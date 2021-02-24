@@ -1,7 +1,9 @@
 _text = '';
 let shouldClear = false;
 
+//
 Object.defineProperty(globalThis, 'text', {
+    // Очиска строки
     get: function () {
         if (shouldClear) {
             shouldClear = false;
@@ -9,15 +11,19 @@ Object.defineProperty(globalThis, 'text', {
         }
         return _text;
     },
+    // Document метод querySelector() возвращает первый элемент (Element) документа, который соответствует указанному селектору 
+    // или группе селекторов. Если совпадений не найдено, возвращает значение null.
     set: function (v) {
         _text = v;
         document.querySelector('.screen').innerText = text;
     }
 });
 
+// проверка количества открытых и закрытых скобок
 const cnt = c => Array.from(text).reduce((a, b) => b === c ? a + 1 : a, 0);
 
 window.onload = function () {
+    // Отбратобка нажатой цифры
     document.querySelectorAll('.key.digit').forEach(e => {
         let num = e.innerText;
         e.addEventListener('click', function () {
@@ -27,6 +33,7 @@ window.onload = function () {
             text = text + num;
         });
     });
+    // обработка нажатого оператора
     document.querySelectorAll('.key.operation').forEach(e => {
         let num = e.innerText;
         e.addEventListener('click', function () {
@@ -40,6 +47,7 @@ window.onload = function () {
             text = text + ' ' + num + ' ';
         });
     });
+    // обработка открытой скобки
     document.querySelectorAll('.key.bracket.opening').forEach(e => {
         let num = e.innerText;
         e.addEventListener('click', function () {
@@ -50,6 +58,7 @@ window.onload = function () {
             }
         });
     });
+    // обработка закрытой скобки
     document.querySelectorAll('.key.bracket.closing').forEach(e => {
         let num = e.innerText;
         e.addEventListener('click', function () {
@@ -62,6 +71,7 @@ window.onload = function () {
             }
         });
     });
+    // обработка равно
     document.querySelectorAll('.key.result').forEach(e => {
         let num = e.innerText;
         e.addEventListener('click', function () {
@@ -72,13 +82,14 @@ window.onload = function () {
                 try {
                     text = eval(text);
                 } catch (error) {
-                    //Should never happen, just in case
+                    //вывод ошибки
                     text = 'Error';
                 }
                 shouldClear = true;
             }
         });
     });
+    // обработка очищения
     document.querySelectorAll('.key.clear').forEach(e => {
         let num = e.innerText;
         e.addEventListener('click', function () {
