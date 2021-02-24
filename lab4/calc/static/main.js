@@ -1,7 +1,7 @@
 _text = '';
 let shouldClear = false;
 
-//
+//Этот метод позволяет точно добавлять или изменять свойства объекта.
 Object.defineProperty(globalThis, 'text', {
     // Очиска строки
     get: function () {

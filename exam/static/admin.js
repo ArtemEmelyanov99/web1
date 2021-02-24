@@ -89,7 +89,7 @@ function get_data_API() {
                         <td>${myList[key].address}</td>
                         <td>
                           <button id = "open" style="background: none; border: none;" data-toggle="modal" data-target="#see" onclick = "get_data_API_ID(${myList[key].id})"><img
-                              style="max-width: 30px; width: 100%;" src="menu/add.svg" title="Добавление новой записи"
+                              style="max-width: 30px; width: 100%;" src="menu/add.svg" title="Просмотр записи"
                               alt="Просмотр записи"></button>
                           <button style="background: none; border: none;" data-toggle="modal" data-target="#edit" onclick = "get_data_edit_API(${myList[key].id})"><img
                               style="max-width: 30px; width: 100%;" src="menu/edit.svg" title="Редактирование записи"
